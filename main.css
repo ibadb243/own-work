@@ -1,0 +1,328 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    font-family: "Raleway", "Cascadia Mono", sans-serif;
+    scrollbar-width: 7px;
+    scrollbar-color: #6C6C6C;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1C1C1C;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #FF4D00;
+    border-radius: 7px;
+}
+
+
+header {
+    width: 100%;
+    height: 134px;
+}
+
+header > .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 36%;
+    height: 78px;
+    padding: 0px 32%;
+    background: #1C1C1C;
+}
+
+.contact > p {
+    color: #fff;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+.contact > p:nth-child(2) {
+    text-align: right;
+}
+
+.contact > p > span.orange {
+    color: #FF4D00;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+header > nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: 56px;
+    padding: 0px 20%;
+    background: #F7F7F7;
+}
+
+nav > .brand {
+    display: flex;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    font-weight: 900;
+    font-style: italic;
+}
+
+nav > .brand >.logo {
+    margin-left: 3px;
+}
+
+nav > ul {
+    /* display: flex;
+    justify-content: space-between; */
+    list-style-type: none;
+}
+
+nav > ul > li {
+    float: left;
+    margin: 70px;
+}
+
+nav > ul > li > a {
+    color: #6C6C6C;
+    text-decoration: none;
+}
+
+nav > .icons > svg {
+    margin: 0px 3px;
+}
+
+.welcome {
+    width: 100%;
+    height: calc(100% - 134px);
+    overflow: hidden;
+}
+
+.welcome > img {
+    width: calc(100vw + 134px);
+    height: calc(100vh - 134px);
+}
+
+.welcome > div {
+    position: relative;
+    top: -300px;
+    width: 80%;
+    padding: 45px 10%;
+    background: rgba(28, 28, 28, 0.76);
+    text-align: left;
+}
+
+.welcome > div > h1 {
+    margin-bottom: 14px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.welcome > div > p {
+    color: #db4301;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.cars {
+    width: 80%;
+    margin: -140px auto 0px auto;
+}
+
+.cars > h1 {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.cars > p {
+    color: #FF4D00;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.cars > article {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 70px 0px;
+}
+
+.cars > button {
+    display: block;
+    margin: -49px auto 0px auto;
+    padding: 10px 28px;
+    background: transparent;
+    border: 4px solid #FF4D00;
+}
+
+.cars > button > a {
+    color: #000;
+    font-family: "Cascadia Mono";
+    font-size: 1.4em;
+    text-decoration: none;
+}
+
+.car_card {
+    width: 40%;
+    height: 272px;
+    margin-bottom: 91px;
+    background: #F7F7F7;
+    box-shadow: 4px 4px 4px #FF4D00;
+}
+
+.car_card > h2 {
+    position: relative;
+    margin-top: 28px;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
+
+.car_card > p {
+    text-align: center;
+}
+
+.info_car {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 14px;
+}
+
+.info_car > img {
+    width: 232px;
+    height: 150px;
+    object-fit: scale-down;
+}
+
+.info_car > .info {
+    margin-top: 14px;
+    margin-left: 14px;
+}
+
+.info_car > p {
+    color: #818181;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+}
+
+.about {
+    width: 80%;
+    margin-top: 70px;
+    padding: 0px 10%;
+}
+
+.about > h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.about > p {
+    color: #FF4D00;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.about > p.info {
+    color: #000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.about > figure > img {
+    width: 100%;
+}
+
+.about > figure > figcaption {
+    float: right;
+}
+
+.about > .quality {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about > .quality > div > p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.about > .quality > div > p::before {
+    content: "✓";
+    color: #FF4D00;
+    font-weight: 900;
+    font-size: 1.7em;
+    margin-right: 5px;
+}
+
+.about > button {
+    display: block;
+    margin: 70px auto 0px auto;
+    padding: 10px 28px;
+    background: transparent;
+    border: 4px solid #FF4D00;
+}
+
+.about > button > a {
+    color: #000;
+    font-family: "Cascadia Mono";
+    font-size: 1.4em;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    height: 208px;
+    padding: 20px 0px;
+    background: #1C1C1C;
+    color: #F7F7F7;
+}
+
+footer > div {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+footer > div > p {
+    display: flex;
+    align-items: center;
+}
+
+footer > div > p > svg, footer > div > p > span {
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+footer > div > p > span {
+    font-weight: 100;
+}
+
+footer > p.p {
+    color: #FF4D00;
+    font-size: 0.7em;
+    font-weight: 200;
+}
+
+footer > p.p > span {
+    font-weight: 900;
+}
